@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+   <children>
+      <ComboBox fx:id="cbApp" layoutX="25.0" layoutY="49.0" onKeyReleased="#keyReleasedProperty" prefWidth="150.0" promptText="App" />
+      <TextField fx:id="tfIP" layoutX="15.0" layoutY="99.0" onKeyReleased="#keyReleasedProperty" promptText="Server IP" />
+      <TextField fx:id="tfCommand" layoutX="15.0" layoutY="135.0" onKeyReleased="#keyReleasedProperty" promptText="Command" />
+      <CheckBox fx:id="cbScreen" layoutX="87.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#mouseclickedScreen" text="Screenshot" />
+      <Button fx:id="btnStart" layoutX="70.0" layoutY="230.0" mnemonicParsing="false" onAction="#clickedStart" text="Start" />
+   </children>
+</AnchorPane>
